@@ -1,10 +1,7 @@
 //////////////////////
 // GLOBAL VARIABLES //
 //////////////////////
-const alphabet = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
-i = Math.floor(Math.random()*alphabet.length + 1)
-console.log(alphabet[i]);
-//alphabet.charAt(6);
+const alphabet = "abcdefghijklmnopqrstuvwxyz";
 const foods = [
     "pizza",
     "burgers",
@@ -13,8 +10,7 @@ const foods = [
     "macaroni and cheese",
     "baked potatoes"
 ];
-i = Math.floor(Math.random()*6 + 1)
-console.log(foods[i])
+
 const students = [
     "Bob",
     "Martin",
@@ -24,17 +20,27 @@ const students = [
     "Sean",
     "Robert"
 ];
-i = Math.floor(Math.random()*6 +1)
-console.log(students[i]) 
 
-let n = 0
-while (n<3){
-    i = Math.floor(Math.random()*6 +1)
-    console.log(students[i]) 
-    n++;
-}
 /////////////////////////////
 // END OF GLOBAL VARIABLES //
 /////////////////////////////
 
 console.log(Math.floor(Math.random() * 21 + 1))
+
+i = Math.floor(Math.random()*alphabet.length + 1)
+console.log(alphabet.charAt(i));
+
+i = Math.floor(Math.random()*6 + 1)
+console.log(foods[i])
+
+i = Math.floor(Math.random()*6 +1)
+console.log(students[i]) 
+
+let n = 0
+while (n<3){
+    student = ""
+    i = Math.floor(Math.random()*6 +1)
+    student += students[i]
+    console.log(student)
+    n++;
+}
